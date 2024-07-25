@@ -5,8 +5,9 @@ import ex1.Dipendente;
 
 public class Manager extends Dipendente {
 
-    public Manager(int weekHours, double hourSalary) {
-        super(weekHours, hourSalary);
+    public Manager(double hourSalary) {
+        super(hourSalary);
+        this.weekHours = 45;
     }
 
     @Override

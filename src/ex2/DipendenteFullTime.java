@@ -4,8 +4,9 @@ import ex1.Dipendente;
 
 public class DipendenteFullTime extends Dipendente {
 
-    public DipendenteFullTime(int weekHours, double hourSalary) {
-        super(weekHours, hourSalary);
+    public DipendenteFullTime(double hourSalary) {
+        super(hourSalary);
+        this.weekHours = 40;
     }
 
     @Override

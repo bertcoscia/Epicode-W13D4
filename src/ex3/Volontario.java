@@ -8,11 +8,12 @@ public class Volontario extends Dipendente implements Worker {
     int age;
     String cv;
 
-    public Volontario(int weekHours, double hourSalary, String name, int age, String cv) {
-        super(weekHours, hourSalary);
+    public Volontario(double hourSalary, String name, int age, String cv) {
+        super(hourSalary);
         this.name = name;
         this.age = age;
         this.cv = cv;
+        this.weekHours = 30;
     }
 
     @Override

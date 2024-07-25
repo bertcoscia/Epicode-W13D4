@@ -2,10 +2,14 @@ package ex2;
 
 import ex1.Dipendente;
 
+import java.util.Random;
+
 public class DipendentePartTime extends Dipendente {
 
-    public DipendentePartTime(int weekHours, double hourSalary) {
-        super(weekHours, hourSalary);
+    public DipendentePartTime(double hourSalary) {
+        super(hourSalary);
+        Random random = new Random();
+        this.weekHours = random.nextInt(20, 25);
     }
 
     @Override

@@ -7,15 +7,15 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Dipendente dipFT = new DipendenteFullTime(40, 10);
+        Dipendente dipFT = new DipendenteFullTime(10);
         /*dipFT.calculateSalary();
         System.out.println(dipFT);*/
 
-        Dipendente dipPT = new DipendentePartTime(20, 9);
+        Dipendente dipPT = new DipendentePartTime(7.5);
         /*dipPT.calculateSalary();
         System.out.println(dipPT);*/
 
-        Manager manager = new Manager(45, 25);
+        Manager manager = new Manager(25);
         /*manager.calculateSalary();
         System.out.println(manager);*/
 

@@ -13,10 +13,9 @@ public abstract class Dipendente implements Worker {
     protected int weekHours;
     protected double hourSalary;
 
-    public Dipendente(int weekHours, double hourSalary) {
+    public Dipendente(double hourSalary) {
         Random random = new Random();
         this.matricola = random.nextInt(1000, 9999);
-        this.weekHours = weekHours;
         this.hourSalary = hourSalary;
     }
 
