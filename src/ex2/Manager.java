@@ -18,11 +18,11 @@ public class Manager extends Dipendente {
     @Override
     public String toString() {
         return "Manager" + matricola + " {" +
-                "weekHours=" + weekHours +
-                ", hourSalary=" + hourSalary +
-                ", matricola=" + matricola +
-                ", salary=" + salary +
-                ", department=" + department +
+                "weekHours= " + weekHours +
+                ", hourSalary= " + hourSalary +
+                ", matricola= " + matricola +
+                ", salary= " + salary +
+                ", department= " + department +
                 '}';
     }
 

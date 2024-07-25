@@ -23,9 +23,9 @@ public class Volontario extends Dipendente implements Worker {
     @Override
     public String toString() {
         return "Volontario " + name + " {" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", cv='" + cv + '\'' +
+                "name= '" + name + '\'' +
+                ", age= " + age +
+                ", cv= '" + cv + '\'' +
                 '}';
     }
 

@@ -17,11 +17,11 @@ public class DipendenteFullTime extends Dipendente {
     @Override
     public String toString() {
         return "Dipendente Full Time " + matricola + " {" +
-                "weekHours=" + weekHours +
-                ", hourSalary=" + hourSalary +
-                ", matricola=" + matricola +
-                ", salary=" + salary +
-                ", dipartimento=" + department +
+                "weekHours= " + weekHours +
+                ", hourSalary= " + hourSalary +
+                ", matricola= " + matricola +
+                ", salary= " + salary +
+                ", department= " + department +
                 '}';
     }
 }

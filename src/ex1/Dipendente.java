@@ -45,9 +45,9 @@ public abstract class Dipendente implements Worker {
     @Override
     public String toString() {
         return "Dipendente{" +
-                "matricola=" + matricola +
-                ", salary=" + salary +
-                ", dipartimento=" + department +
+                "matricola= " + matricola +
+                ", salary= " + salary +
+                ", dipartimento= " + department +
                 '}';
     }
 

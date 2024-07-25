@@ -1,32 +1,42 @@
 package ex2;
 
+import enums.Department;
 import ex1.Dipendente;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Dipendente dip1 = new DipendenteFullTime(40, 10);
-        /*dip1.calculateSalary();
-        System.out.println(dip1);*/
+        Dipendente dipFT = new DipendenteFullTime(40, 10);
+        /*dipFT.calculateSalary();
+        System.out.println(dipFT);*/
 
-        Dipendente dip2 = new DipendentePartTime(20, 9);
-        /*dip2.calculateSalary();
-        System.out.println(dip2);*/
+        Dipendente dipPT = new DipendentePartTime(20, 9);
+        /*dipPT.calculateSalary();
+        System.out.println(dipPT);*/
 
-        Dipendente dip3 = new Manager(45, 25);
-        /*dip3.calculateSalary();
-        System.out.println(dip3);*/
+        Manager manager = new Manager(45, 25);
+        /*manager.calculateSalary();
+        System.out.println(manager);*/
 
         Dipendente[] arrDip = new Dipendente[3];
-        arrDip[0] = dip1;
-        arrDip[1] = dip2;
-        arrDip[2] = dip3;
+        arrDip[0] = dipFT;
+        arrDip[1] = dipPT;
+        arrDip[2] = manager;
+        System.out.println(Arrays.toString(arrDip));
 
         double totalSalaries = 0;
         for (Dipendente dipendente : arrDip) {
             dipendente.calculateSalary();
             totalSalaries += dipendente.getSalary();
-            dipendente.checkIn();
         }
-        System.out.println(totalSalaries);
+        System.out.println("Total salaries: " + totalSalaries);
+
+        manager.assignDepartment(dipFT, Department.PRODUZIONE);
+        manager.assignDepartment(dipPT, Department.VENDITE);
+        manager.assignDepartment(manager, Department.AMMINISTRAZIONE);
+
+        System.out.println(Arrays.toString(arrDip));
+
     }
 }
