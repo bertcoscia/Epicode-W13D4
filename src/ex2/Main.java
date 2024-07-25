@@ -25,6 +25,7 @@ public class Main {
         for (Dipendente dipendente : arrDip) {
             dipendente.calculateSalary();
             totalSalaries += dipendente.getSalary();
+            dipendente.checkIn();
         }
         System.out.println(totalSalaries);
     }

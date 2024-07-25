@@ -1,18 +1,12 @@
 package ex2;
 
+import enums.Department;
 import ex1.Dipendente;
 
-import java.util.Random;
-
 public class Manager extends Dipendente {
-    protected int weekHours;
-    protected double hourSalary;
 
     public Manager(int weekHours, double hourSalary) {
-        Random random = new Random();
-        this.matricola = random.nextInt(1000, 9999);
-        this.weekHours = weekHours;
-        this.hourSalary = hourSalary;
+        super(weekHours, hourSalary);
     }
 
     @Override
@@ -30,5 +24,9 @@ public class Manager extends Dipendente {
                 ", salary=" + salary +
                 ", department=" + department +
                 '}';
+    }
+
+    public void assignDepartment(Dipendente dip, Department department) {
+        dip.setDepartment(department);
     }
 }
