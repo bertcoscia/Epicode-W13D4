@@ -2,7 +2,7 @@ package ex1;
 
 public class Main {
     public static void main(String[] args) {
-        Dipendente dip1 = new Dipendente();
+        /*Dipendente dip1 = new Dipendente();
         Dipendente dip2 = new Dipendente();
         Dipendente dip3 = new Dipendente();
 
@@ -13,6 +13,6 @@ public class Main {
 
         for (Dipendente dipendente : arrDip) {
             System.out.println(dipendente.matricola);
-        }
+        }*/
     }
 }

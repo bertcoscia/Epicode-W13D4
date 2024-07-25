@@ -1,5 +1,5 @@
 package enums;
 
-public enum Dipartimento {
+public enum Department {
     PRODUZIONE, AMMINISTRAZIONE, VENDITE
 }
